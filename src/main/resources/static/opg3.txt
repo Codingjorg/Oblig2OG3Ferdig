@@ -1,0 +1,19 @@
+Oblig 3: Bestilling av kinobilletter med databaselagring
+Ta utgangspunkt i koden fra obligatorisk oppgave 2 og erstatt arrayet på
+tjener/server med en tabell i en relasjonsdatabase. Det holder å bruke
+H2-"in-memory"-database, men H2-konsollet skal fungere også på Heroku
+ved å legge inn følgende konfigurasjon i "src/main/resources/application.properties":
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.h2.console.settings.web-allow-others=true
+
+Vær obs på at konfigurasjonen ovenfor også vil gjelde lokalt, slik at du nå
+finner H2-konsollet på http://localhost:8080/h2-console
+
+Listen med innlagte bestillinger som sendes fra server til klient når alle
+bestillinger hentes skal være sortert på etternavn. Uten noen form for sortering
+ så vil denne listen være ordnet etter rekkefølgen bestillingene ble lagt inn på.
+  Sorteringen skal skje på server.
+
+Ellers skal applikasjonen ha den samme funksjonaliteten som i oblig 1 og 2.

@@ -1,10 +1,13 @@
-CREATE TABLE Bilett
-(
-    id INTEGER AUTO_INCREMENT NOT NULL,
-    Film VARCHAR(50),
-    Antall INTEGER,
-    Fornavn VARCHAR(50),
-    Etternavn VARCHAR(50),
-    Telefonnr VARCHAR(15),
-    Epost VARCHAR(50);
+CREATE TABLE BILETT(
+                        id INTEGER AUTO_INCREMENT NOT NULL,
+                        film VARCHAR(50),
+                        antall INTEGER,
+                        fornavn VARCHAR(50),
+                        etternavn VARCHAR(50),
+                        telefonnr VARCHAR(15),
+                        epost VARCHAR(50),
+                    PRIMARY KEY (id)
 );
+
+
+

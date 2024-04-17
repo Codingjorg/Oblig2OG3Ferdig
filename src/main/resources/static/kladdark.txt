@@ -1,0 +1,12 @@
+ $("#biletterKjopt").append
+            (`<tr id='${tableRowText}${clickCounter}'>` + "<td>" +
+                `${film} ` + "</td>" + "<td>" +
+                `${antall}` +"</td>" + "<td>" +
+                `${fornavn}` +"</td>" + "<td>" +
+                `${etternavn} ` + "</td>" + "<td>" +
+                `${telefonnr}` +"</td>" + "<td>" +
+                `${epost}` +"</td>" +
+                `<td><button class="btn btn-danger" id="${knappFjernTekst}${clickCounter}">
+Fjern</button></td>` +
+                "</tr><br>");
+            clickCounter++;
