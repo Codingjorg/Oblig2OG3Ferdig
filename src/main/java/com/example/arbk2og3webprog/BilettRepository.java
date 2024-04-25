@@ -24,11 +24,14 @@ public class BilettRepository {
         return alleBiletter;
     }
 
+
+    int idIncreaser = 3;
     public void lagreBilett(Bilett bilett){
-        String sql = "INSERT INTO Bilett (film,antall,fornavn,etternavn,telefonnr,epost)" +
-                " VALUES(?,?,?,?,?,?)";
-        database1.update(sql, bilett.getFilm(),bilett.getAntall(),bilett.getFornavn(),
+        String sql = "INSERT INTO Bilett (id,film,antall,fornavn,etternavn,telefonnr,epost)" +
+                " VALUES(?,?,?,?,?,?,?)";
+        database1.update(sql, idIncreaser, bilett.getFilm(),bilett.getAntall(),bilett.getFornavn(),
                 bilett.getEtternavn(),bilett.getTelefonnr(),bilett.getEpost());
+        idIncreaser++;
     }
 
     public void slettBilett(int id){
