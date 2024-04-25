@@ -4,3 +4,4 @@ Applikasjonen på klient skal "styles" med Bootstrap.
 Ellers skal applikasjonen ha samme funksjonalitet som i obligatorisk oppgave 1.
  README.md-filen skal fortsatt ligge i rotkatalogen til løsningen din, og skal
  utvides med en liten beskrivelse av webapplikasjonen (3-5 setninger).
+ Lorem Ipsum
